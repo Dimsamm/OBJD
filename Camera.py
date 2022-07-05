@@ -11,6 +11,7 @@ layer_names = net.getLayerNames()
 outputlayers = [layer_names[i-1] for i in net.getUnconnectedOutLayers()]
 warna = np.random.uniform(0, 255, size=(len(data), 3))
 
+# 0 untuk kamera
 vid = cv2.VideoCapture(0)
 font = cv2.FONT_HERSHEY_SIMPLEX
 
